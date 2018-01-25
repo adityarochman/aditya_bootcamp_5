@@ -1,0 +1,31 @@
+<div class="col-xs-10">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <form #f="ngForm" (ngSubmit)="savetoCart(f)" class="form-horizontal">
+                <div class="col-xs-7">
+
+                    <div class="thumbnail">
+                        <img style="height: 70%; width: 70%;" src="{{ product.profileProduct }}" class="img-responsive" id="profileProduct" name="profileProduct" alt="" ngModel >
+
+                        <div class="post-content">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-5">
+
+                    <label style="font-size : 30px; font-family : -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;" id="nameProduct" name= "nameProduct" ngModel >{{product.nameProduct}}</label>
+                    <br>
+                    <label style="font-size : 25px; font-family : 'Times New Roman', Times, serif; margin-bottom : 40px;" id="categoryProduct" name="categoryProduct" ngModel> Category {{product.categoryProduct}}</label>
+                    <br>
+                    <label style="font-size : 15px; font-family : 'Times New Roman', Times, serif;" id="priceProduct" name="priceProduct" ngModel>Rp : {{product.priceProduct}}</label>
+                    <br>
+
+                    <button type="submit" routerLink="/cart">ADD TO CART</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
